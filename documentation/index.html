@@ -142,8 +142,16 @@
 
 <h3>Example</h3>
 
-<pre class="brush: razor">
-
+<pre class="brush: javascript">
+	<%@ Register TagPrefix="spx" Namespace="SuperScript.JavaScript.WebForms.Containers" Assembly="SuperScript.JavaScript.WebForms" %>
+	&#10;
+	<spx:JavaScriptContainer runat="server" EmitterKey="javascript" InsertAt="0">
+		&lt;script type="text/javascript"&gt;
+		
+			var demoVar = "hello world";
+		
+		&lt;/script&gt;
+	</spx:JavaScriptContainer>
 </pre>
 
 <p>
